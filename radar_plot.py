@@ -10,12 +10,12 @@ import sys
 team_name = sys.argv[1]
 date = datetime.datetime.today().strftime('%Y-%m-%d')
 
-customer_readiness_level = sys.argv[2]
-team_readiness_level = sys.argv[3]
-business_readiness_level = sys.argv[4]
-ipr_readiness_level = sys.argv[5]
-funding_readiness_level = sys.argv[6]
-technology_readiness_level = sys.argv[7]
+customer_readiness_level = int(sys.argv[2])
+team_readiness_level = int(sys.argv[3])
+business_readiness_level = int(sys.argv[4])
+ipr_readiness_level = int(sys.argv[5])
+funding_readiness_level = int(sys.argv[6])
+technology_readiness_level = int(sys.argv[7])
 
 # Set data
 df = pd.DataFrame({
